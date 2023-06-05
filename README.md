@@ -9,6 +9,7 @@ API : http://localhost:3000/employee_details/update
 Method : POST
 
 Request Params : 
+
 {
     employee_id: "EMP01",
     first_name: "sureshkumar",
@@ -16,9 +17,7 @@ Request Params :
     date_of_joining: 22-05-2023,
     salary: 750000,
     email: "sureshkumar9887@gmail.com",
-    phonenumber: [
-        9585024946
-    ]
+    phonenumber: "9585024946,8754216516"
 }
 
 
@@ -35,6 +34,7 @@ API : http://localhost:3000/employee_details/get_tax
 Method : GET
 
 Request Params : 
+
 {
     employee_id: "EMP06",
     no_days_lop: 5
