@@ -1,24 +1,47 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API endpoint details
 
-Things you may want to cover:
+#Create employee details
 
-* Ruby version
+API : http://localhost:3000/employee_details/update
 
-* System dependencies
+Method : POST
 
-* Configuration
+Request Params : 
+{
+    employee_id: "EMP01",
+    first_name: "sureshkumar",
+    last_name: "kannaiyan",
+    date_of_joining: 22-05-2023,
+    salary: 750000,
+    email: "sureshkumar9887@gmail.com",
+    phonenumber: [
+        9585024946
+    ]
+}
 
-* Database creation
 
-* Database initialization
+Success response :
 
-* How to run the test suite
+{
+    "message": "employee details added successfully"
+}
 
-* Services (job queues, cache servers, search engines, etc.)
+#API for calculate tax of employee
 
-* Deployment instructions
+API : http://localhost:3000/employee_details/get_tax
 
-* ...
+Method : GET
+
+Request Params : 
+{
+    employee_id: "EMP06",
+    no_days_lop: 5
+}
+
+Success Response :
+
+{
+    "total_tax": 1132500
+}
